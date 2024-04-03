@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    /* font-optical-sizing: auto;
+    font-style: normal; */
+}
+
+body{  
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:hsl(30, 10%, 34%);;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 800px;
+    padding: 40px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+}
+
+.main-image{
+    width: 700px;
+}
+
+.main-image img{
+    border-radius: 10px;
+    height: inherit;
+    width: 700px;
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+p{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.perp-card{
+    background-color: hsl(330, 100%, 98%);
+    padding: 25px;
+}
+.perp-card ul{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.perp-card ul li{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.perp-card h3{
+   color:hsl(332, 51%, 32%)
+}
+li::marker {
+    color: hsl(332, 51%, 32%);
+}
+
+.ingred-card{
+    margin-top: 30px;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 30px;
+}
+.ingred-card h3{
+    color: hsl(14, 45%, 36%);
+    font-size: 30px;
+}
+.ingred-card ul{
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.ingred-card li{
+    padding-left: 15px;
+    padding-top: 10px;
+    font-weight: 300;
+    color: hsl(30, 10%, 34%);
+}
+
+.instr-card{
+    padding-top: 20px;
+    font-weight: 300;
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+    padding-bottom:30px;
+}
+.instr-card h3{
+    font-size: 30px;
+    color: hsl(14, 45%, 36%);
+}
+.instr-card ol{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.instr-card ol li{
+    padding-top: 15px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+.instr-card span{
+    font-weight: 300;
+}
+
+
+.nutr-card{
+    padding-top:20px;
+}
+.nutr-card h3{
+    font-size: 30px;
+    color: hsl(14, 45%, 36%);
+}
+.nutr-card p{
+    padding-top:20px;
+}
+.nutr-card table{
+    padding-top: 20px;
+    width: 700px;
+}
+
+tr{
+    border: 1px solid green !important;
+}
+.nutr-card table td{
+    padding: 10px 25px;
+    font-size: 17px;
+    border-bottom: 1px solid  hsl(30, 18%, 87%);
+}
+
+/* make it responsive */
