@@ -34,8 +34,8 @@ body{
 
 .main-image img{
     border-radius: 10px;
-    height: inherit;
-    width: 700px;
+    height: auto;
+    width: 100%;
 }
 
 h1{
@@ -134,5 +134,50 @@ tr{
     font-size: 17px;
     border-bottom: 1px solid  hsl(30, 18%, 87%);
 }
+.nutr-card table td:last-child{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
 
-/* make it responsive */
+/*responsive */
+
+@media (max-width: 450px) {
+
+    .container{
+        width: 300px;
+        padding: 5px;
+    }
+    .main-image{
+        max-width: 280px;
+        
+    }
+    .main-image img{
+        height: 150px;
+    }
+
+     h1,p,
+    .perp-card,
+    .ingred-card,
+    .instr-card,
+    .nutr-card{
+        padding: 20px;
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    p{
+        position: relative;
+        top: -10px;
+        padding-top:0;
+
+    }
+    .ingred-card{
+        margin-top: 0;
+    }
+    .nutr-card table{
+        padding-top: 0px;
+        width: 250px;
+    }
+}
