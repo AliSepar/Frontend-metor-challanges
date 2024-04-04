@@ -61,7 +61,7 @@ label{
     font-weight: 600;
     padding-bottom: 5px;
 }
-input[type=text]{
+.email{
     border-radius: 5px;
     height: 45px;
     padding: 15px;
@@ -70,6 +70,27 @@ input[type=text]{
     color: hsl(234, 29%, 20%);
     font-size: 16px;
 }
+.formlable{
+    display: inline-block;
+}
+.errormasg{
+    font-size: 12px;
+    float: right;
+    position: relative;
+    right: 12px;
+    font-weight: 600;
+    color: hsl(4, 100%, 67%);
+    /* position: relative;
+    left: 100px; */
+}
+.errorinbox{
+ background-color: hsl(4, 100%, 67% ,0.3);
+ border: solid 2px hsl(4, 100%, 67%);
+ color: hsl(4, 100%, 67%) !important; 
+
+}
+
+
 .btn{
     width: 350px;
     margin-top: 20px;
@@ -93,10 +114,6 @@ input[type=text]{
     -moz-box-shadow: -7px 35px 22px -28px rgba(255,98,87,1);
     box-shadow: -7px 35px 22px -28px rgba(255,98,87,1);
 }
-
-
-
-
 .image{
     max-height: 500px;
 }
@@ -105,10 +122,32 @@ input[type=text]{
 }
 
 
-
-
-
 .sucsses-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.sucsses-card img{
+    max-width: 40px;
+    margin-bottom: 15px;
+}
+.sucsses-card p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+.sucsses-card span{
+    font-weight: 600;
+}
+.s-btn{
+    max-width: 260px;
+}
+
+.show{
+    display: block;
+}
+.hide{
     display: none;
 }
 

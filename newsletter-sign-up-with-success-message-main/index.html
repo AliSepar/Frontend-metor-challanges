@@ -9,17 +9,13 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   <link rel="stylesheet" href="style.css">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
   <!-- Sign-up form start -->
 <div class="container">
 
-  <div class="content">
+  <div class="content show">
       <h1>Stay updated!</h1>
       <p> Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
@@ -29,14 +25,15 @@
       </ul>
 
       <form action="">
-        <label for="">  Email address</label>
-        <input type="text" placeholder="email@company.com" name="email">
+        <div class="formlable">
+        <label for="">  Email address</label> <span class="errormasg hide">Valid email requird</span></div>
+        <input type="text" placeholder="email@company.com" name="email" class="email">
         <button type="button" class="btn">Subscribe to monthly newsletter</button>
       </form>
 
   </div>
 
-  <div class="image">
+  <div class="image show">
     <img src="assets/images/illustration-sign-up-desktop.svg" alt="image" id="main-image" class="main-image">
   </div>
 
@@ -44,14 +41,14 @@
 
 
 
-  <div class="sucsses-card">
+  <div class="sucsses-card hide">
     <img src="assets/images/icon-success.svg" alt="success-icon">
     <h1>Thanks for subscribing!</h1>
     <p>
     A confirmation email has been sent to <span id="clint-email">ash@loremcompany.com</span>. 
     Please open it and click the button inside to confirm your subscription.
     </p>
-    <button class="btn">Dismiss message</button>
+    <button class="btn s-btn">Dismiss message</button>
   </div>
 
 
@@ -72,6 +69,6 @@
 
   <!-- Success message end -->
   
-
+<script src="app.js"></script>
 </body>
 </html>
