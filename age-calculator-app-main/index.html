@@ -20,24 +20,28 @@
     
   <div class="input">
 
-    <form action="">
-      <label for="day">DAY</label>
-      <input type="text" id="day" placeholder="DAY">
+      <div class="input-group">
+        <label for="day">DAY</label>
+        <input type="text" id="day" placeholder="DAY">
+      </div>
 
-      <label for="month">MONTH</label>
-      <input type="text" id="month" placeholder="MONTH">
-      
+      <div class="input-group">
+        <label for="month">MONTH</label>
+        <input type="text" id="month" placeholder="MONTH">
+      </div>
+
+      <div class="input-group"> 
       <label for="year">YEAR</label>
       <input type="text" id="year" placeholder="YEAR">
-      
-      <button type="button"><img src="assets/images/icon-arrow.svg" alt=""></button>
-    </form>
+      </div>
   </div>
-<hr>
+  <button type="button" class="btn"><img src="assets/images/icon-arrow.svg" alt=""></button>
+
+  <hr>
  <div class="result">
-    <p><span>--</span>years</p>
-    <p><span>--</span>months</p>
-    <p><span>--</span>days</p>
+    <p><span id="ryear">--</span>years</p>
+    <p><span id="rmonth">--</span>months</p>
+    <p><span id="rmonth">--</span>days</p>
 
   </div>
   
@@ -48,5 +52,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
