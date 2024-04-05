@@ -22,7 +22,7 @@ Users should be able to:
 ### Links
 
 <!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-- Live Site URL: [Click Here](beautiful-pixie-cce9b5.netlify.app)
+- Live Site URL: [https://beautiful-pixie-cce9b5.netlify.app/]
 
 ## My process
 
