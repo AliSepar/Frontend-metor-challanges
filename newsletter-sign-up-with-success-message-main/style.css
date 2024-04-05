@@ -127,6 +127,10 @@ label{
     flex-direction: column;
     max-width: 300px;
     padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 200px;
+    /* top: 250px; */
 }
 
 .sucsses-card img{
@@ -143,7 +147,6 @@ label{
 .s-btn{
     max-width: 260px;
 }
-
 .show{
     display: block;
 }
@@ -158,3 +161,36 @@ label{
     color: white;
 }
 .attribution a { color:hsl(4, 100%, 67%) }
+
+
+/* making it resposive */
+@media (max-width: 375px) or (max-width:500px) {
+    .container{
+   
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+        width:100%;
+    }
+    .image{
+       height: 50%;
+    }
+    .main-image{
+        width: 100%;
+        height: 50%;
+        content: url("assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    .content{
+        margin-top: 0px;
+        width: 90%;
+    }
+    .content h1{
+        font-size: 3rem;
+    
+    }
+   .email,.btn{
+        width: 90%;
+    }
+
+}
