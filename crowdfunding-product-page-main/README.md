@@ -28,7 +28,7 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox# Frontend Mentor - Crowdfunding product page solution
+- JavaScript
 
 ### The challenge
 
@@ -40,24 +40,6 @@ Users should be able to:
 - See an updated progress bar and total money raised based on their pledge total after confirming a pledge
 - See the number of total backers increment by one after confirming a pledge
 - Toggle whether or not the product is bookmarked
-
-### Screenshot
-
-![](./design/desktop-preview.jpg)
-### Links
-
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- JavaScript
 
 <!-- ### What I learned -->
 
@@ -79,10 +61,10 @@ const proudOfThisFunc = () => {
 }
 ``` -->
 
-
+<!-- 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-nt
+- Twitter - [@yourusername](https://www.twitter.com/yourusername) -->
+
