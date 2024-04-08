@@ -23,7 +23,7 @@ let yearLable = document.querySelector('.yearlable');
 let isValid ="";
 
 inputDay.addEventListener('input',function(e){
-    if(+inputDay.value > 32){
+    if(+inputDay.value > 31){
         dayError.textContent="Must be a valid day";
         inputDay.style.borderColor = "red";
         // dayLable.style.color = "white";
@@ -37,6 +37,7 @@ inputDay.addEventListener('input',function(e){
 });
 inputMonth.addEventListener('input',function(e){
     if(inputMonth.value > 12 || inputMonth.value < 0){
+
         monthError.textContent="Must be a valid month";
         inputMonth.style.borderColor = "red";
         // monthLable.style.color="red";
@@ -46,6 +47,20 @@ inputMonth.addEventListener('input',function(e){
         inputMonth.style.borderColor="hsl(0, 0%, 94%)";
         isValid=true;
     }
+    // for april
+    if(inputMonth.value==4 && inputDay.value==31){
+
+        monthError.textContent="Must be a valid date";
+        inputMonth.style.borderColor = "red";
+        // monthLable.style.color="red";
+        isValid=false;
+    }else{
+        monthError.textContent=""; 
+        inputMonth.style.borderColor="hsl(0, 0%, 94%)";
+        isValid=true;
+    }
+
+
 });
 inputYear.addEventListener('input',function(e){
     const date = new Date();
