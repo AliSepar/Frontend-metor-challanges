@@ -3,22 +3,74 @@ let inputDay=document.getElementById('day');
 let inputMonth=document.getElementById('month');
 let inputYear=document.getElementById('year');
 
-//o
+//output elements to show result
 let outDay = document.getElementById('rday'); 
 let outMonth = document.getElementById('rmonth');
 let outYear = document.getElementById('ryear');
 
 let btn = document.querySelector('.btn');
 
-btn.addEventListener("click",function () {
-    if(isNaN(inputDay.value) && isNaN(inputMonth.value)&& isNaN(inputYear.value)){
-       
-            // not number error
+// gitting error element
+let dayError = document.querySelector('.error-masage-day');
+let monthError = document.querySelector('.error-masage-month');
+let yearError = document.querySelector('.error-masage-year');
+
+// getting the lables
+let dayLable = document.querySelector('.dlable');
+let monthLable = document.querySelector('.monthlable');
+let yearLable = document.querySelector('.yearlable');
+
+let isValid ="";
+
+inputDay.addEventListener('input',function(e){
+    if(+inputDay.value > 32){
+        dayError.textContent="Must be a valid day";
+        inputDay.style.borderColor = "red";
+        // dayLable.style.color = "white";
+        isValid=false;
     }else{
-     
-        const myAge = calculateAge(inputDay.value,inputMonth.value,inputYear.value);
+        dayError.textContent=""; 
+        inputDay.style.borderColor="hsl(0, 0%, 94%)";
+        // dayLable.style.color = "red";
+        isValid=true;
+    }
+});
+inputMonth.addEventListener('input',function(e){
+    if(inputMonth.value > 12 || inputMonth.value < 0){
+        monthError.textContent="Must be a valid month";
+        inputMonth.style.borderColor = "red";
+        // monthLable.style.color="red";
+        isValid=false;
+    }else{
+        monthError.textContent=""; 
+        inputMonth.style.borderColor="hsl(0, 0%, 94%)";
+        isValid=true;
+    }
+});
+inputYear.addEventListener('input',function(e){
+    const date = new Date();
+    if(inputYear.value > date.getFullYear() || inputYear.value < 1){
+        yearError.textContent="Must be a valid year";
+        inputYear.style.borderColor = "red";
+        isValid=false;
+    }else{
+        yearError.textContent=""; 
+        inputYear.style.borderColor="hsl(0, 0%, 94%)";
+        isValid=true;
+    }
+// if(inputYear.value < 1){
+//     yearError.textContent="This field is requird";
+// }
+});
+
+
+btn.addEventListener("click",function (e) {
+
+    if(!isValid){
+        e.preventDefault();
+    }else{
        
-        // console.log(`My age is ${myAge.years} years, ${myAge.months} months, and ${myAge.days} days.`);
+        const myAge = calculateAge(inputDay.value,inputMonth.value,inputYear.value);
        
         outDay.textContent = myAge.days;
         outMonth.textContent = myAge.months;
