@@ -21,19 +21,19 @@
   <div class="input">
 
       <div class="input-group">
-        <label class="input-lable" for="day">DAY</label>
+        <label class="dlable" for="day">DAY</label>
         <input type="number" class="inputbox" id="day" placeholder="DD">
         <span class="error-masage-day"></span>
       </div>
 
       <div class="input-group">
-        <label class="input-lable" for="month">MONTH</label>
-        <input type="number" class="inputbox" id="month" placeholder="MM">
-        <span class="error-masage-month"></span>
+        <label class="monthlable" for="month">MONTH</label>
+        <input type="number" class="inputbox" id="month" placeholder="MM" min="1" max="12" required>
+        <span class="error-masage-month">error</span>
       </div>
 
       <div class="input-group"> 
-      <label class="input-lable" for="year">YEAR</label>
+      <label class="yearlable" for="year">YEAR</label>
       <input type="number" class="inputbox" id="year" placeholder="YYYY">
       <span class="error-masage-year"></span>
       </div>

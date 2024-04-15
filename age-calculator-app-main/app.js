@@ -22,56 +22,94 @@ let yearLable = document.querySelector('.yearlable');
 
 let isValid ="";
 
+
 inputDay.addEventListener('input',function(e){
     if(+inputDay.value > 31){
         dayError.textContent="Must be a valid day";
         inputDay.style.borderColor = "red";
-        // dayLable.style.color = "white";
         isValid=false;
+
+        dayLable.style["color"]="red";
     }else{
         dayError.textContent=""; 
         inputDay.style.borderColor="hsl(0, 0%, 94%)";
-        // dayLable.style.color = "red";
         isValid=true;
+        dayLable.style["color"]="hsl(0, 1%, 44%)";
     }
 });
+
+
 inputMonth.addEventListener('input',function(e){
-    if(inputMonth.value > 12 || inputMonth.value < 0){
+console.log(inputMonth.value);
+    if(inputMonth.value < 1 ){
 
         monthError.textContent="Must be a valid month";
         inputMonth.style.borderColor = "red";
-        // monthLable.style.color="red";
+        monthLable.style["color"]="red";
         isValid=false;
-    }else{
+        console.log("0.2");
+    }
+    if (inputMonth.value > 12){
+     
+        monthError.textContent= "Must be a valid month";
+        inputMonth.style.borderColor = "green";
+        monthLable.style["color"]="red";
+        isValid=false;
+        console.log("1.1");
+        
+    }
+    if(inputMonth.value >= 1 && inputMonth.value < 13){
         monthError.textContent=""; 
         inputMonth.style.borderColor="hsl(0, 0%, 94%)";
         isValid=true;
+        monthLable.style["color"]="hsl(0, 1%, 44%)"; //changeing lable color in orignal in success
+        console.log("2.2");
     }
+
+
     // for april
     if(inputMonth.value==4 && inputDay.value==31){
 
         monthError.textContent="Must be a valid date";
         inputMonth.style.borderColor = "red";
-        // monthLable.style.color="red";
+        monthLable.style["color"]="red";
         isValid=false;
+
     }else{
+        monthLable.style["color"]="hsl(0, 1%, 44%)";
         monthError.textContent=""; 
         inputMonth.style.borderColor="hsl(0, 0%, 94%)";
         isValid=true;
+
+        monthLable.style["color"]="hsl(0, 1%, 44%)";
     }
 
 
 });
 inputYear.addEventListener('input',function(e){
     const date = new Date();
-    if(inputYear.value > date.getFullYear() || inputYear.value < 1){
+    if(inputYear.value < 1){
         yearError.textContent="Must be a valid year";
         inputYear.style.borderColor = "red";
         isValid=false;
+        console.log(0);
+
+        yearLable.style["color"]="red"; //changeing lable color in error
+
+    }else if(inputYear.value > date.getFullYear() || inputYear.value === date.getFullYear()){
+        yearError.textContent=`Year must be less the ${date.getFullYear()} `;
+        inputYear.style.borderColor = "red";
+        isValid=false;
+            // console.log(1);
+        yearLable.style["color"]="red"; //changeing lable color in error
     }else{
         yearError.textContent=""; 
         inputYear.style.borderColor="hsl(0, 0%, 94%)";
         isValid=true;
+        console.log(3);
+
+        yearLable.style["color"]="hsl(0, 1%, 44%)"; //changeing lable color in success
+       
     }
 // if(inputYear.value < 1){
 //     yearError.textContent="This field is requird";
@@ -81,7 +119,7 @@ inputYear.addEventListener('input',function(e){
 
 btn.addEventListener("click",function (e) {
 
-    if(!isValid){
+    if(isValid==false){
         e.preventDefault();
     }else{
        
