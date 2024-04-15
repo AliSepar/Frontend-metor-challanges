@@ -24,13 +24,22 @@ let isValid ="";
 
 
 inputDay.addEventListener('input',function(e){
+    if(inputDay.value < 1){
+        dayError.textContent="Must be a valid day";
+        inputDay.style.borderColor = "red";
+        isValid=false;
+
+        dayLable.style["color"]="red";  
+    }
     if(+inputDay.value > 31){
         dayError.textContent="Must be a valid day";
         inputDay.style.borderColor = "red";
         isValid=false;
 
         dayLable.style["color"]="red";
-    }else{
+    }
+    
+    if(inputDay.value >= 1 && inputDay.value < 32){
         dayError.textContent=""; 
         inputDay.style.borderColor="hsl(0, 0%, 94%)";
         isValid=true;
@@ -41,14 +50,17 @@ inputDay.addEventListener('input',function(e){
 
 inputMonth.addEventListener('input',function(e){
 console.log(inputMonth.value);
+
     if(inputMonth.value < 1 ){
 
         monthError.textContent="Must be a valid month";
-        inputMonth.style.borderColor = "red";
+        inputMonth.style.borderColor='red';
         monthLable.style["color"]="red";
         isValid=false;
         console.log("0.2");
+        console.log(inputMonth);
     }
+
     if (inputMonth.value > 12){
      
         monthError.textContent= "Must be a valid month";
@@ -66,7 +78,6 @@ console.log(inputMonth.value);
         console.log("2.2");
     }
 
-
     // for april
     if(inputMonth.value==4 && inputDay.value==31){
 
@@ -75,16 +86,7 @@ console.log(inputMonth.value);
         monthLable.style["color"]="red";
         isValid=false;
 
-    }else{
-        monthLable.style["color"]="hsl(0, 1%, 44%)";
-        monthError.textContent=""; 
-        inputMonth.style.borderColor="hsl(0, 0%, 94%)";
-        isValid=true;
-
-        monthLable.style["color"]="hsl(0, 1%, 44%)";
     }
-
-
 });
 inputYear.addEventListener('input',function(e){
     const date = new Date();
