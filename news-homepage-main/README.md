@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [monumental-buttercream-e6edb7.netlify.app](monumental-buttercream-e6edb7.netlify.app)
+- Live Site URL: [news-homepage-main1.netlify.app](news-homepage-main1.netlify.app)
 
 ### Built with
 
