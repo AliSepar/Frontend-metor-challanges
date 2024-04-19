@@ -19,6 +19,11 @@ inputName.addEventListener("keyup", function () {
 cardNumber.addEventListener("keyup", function () {
   outNumber.textContent = cardNumber.value;
   console.log(cardNumber.value);
+
+  const cleanedValue = cardNumber.value.replace(/\s/g, ""); // Remove any existing spaces
+  const formattedValue = cleanedValue.replace(/(.{4})/g, "$1 "); // Insert a space after every 4 characters
+  cardNumber.value = formattedValue; // Update the input value
+  //   have to remove spaces before adding new ruls
 });
 inputMonth.addEventListener("keyup", function () {
   outMonth.textContent = inputMonth.value;
