@@ -44,6 +44,9 @@
   position: relative;
   top: 2rem;
 }
+#outName {
+  text-transform: uppercase;
+}
 .back-side {
   background-image: url("images/bg-card-back.png");
   background-position: center;
@@ -101,6 +104,20 @@
 .input-group input::placeholder {
   color: hsl(270, 3%, 87%);
 }
+input:focus {
+  outline: none;
+  /* border: 1px solid linear-gradient(hsl(249, 99%, 64%), hsl(278, 94%, 30%)); */
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10%;
+  border-image: linear-gradient(
+      to right,
+      hsl(249, 99%, 64%),
+      hsl(278, 94%, 30%)
+    )
+    1;
+}
+
 .lin-group {
   display: flex;
   gap: 2rem;
@@ -131,6 +148,46 @@
   cursor: pointer;
 }
 
+.complet-card {
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 25rem;
+}
+.complet-card img {
+  margin: 3rem;
+}
+.complet-card h3 {
+  color: hsl(278, 68%, 11%);
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 1rem;
+}
+.complet-card p {
+  font-size: 20px;
+  font-weight: 600;
+  color: hsl(270, 1%, 59%);
+  margin-bottom: 3rem;
+}
+.complet-card button {
+  /* padding: 1rem; */
+  width: 25rem;
+  height: 3rem;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  border-radius: 0.5rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+.complet-card button:hover {
+  cursor: pointer;
+}
 /* footer */
 .attribution {
   font-size: 11px;

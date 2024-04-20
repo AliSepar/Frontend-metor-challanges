@@ -22,7 +22,7 @@
           <img src="./images/card-logo.svg" alt="" />
           <h2 id="outnumber">0000 0000 0000 0000</h2>
           <div class="inline">
-            <p id="outName">Jane Appleseed</p>
+            <p id="outName">CARDHOLDER NAME</p>
             <p><span id="outMonth">00</span>/<span id="outYear">00</span></p>
           </div>
         </article>
@@ -37,9 +37,10 @@
             <label for=""> Cardholder Name</label>
             <input
               type="text"
-              placeholder="e.g. Jane Appleseed"
+              placeholder="e.g. CARDHOLDER NAME"
               id="inputName"
             />
+            <span id="namerror"></span>
           </div>
           <div class="input-group">
             <label for="">Card Number</label>
@@ -49,6 +50,7 @@
               id="cardNumber"
               maxlength="19"
             />
+            <span id="numbererror"></span>
           </div>
           <div class="lin-group">
             <div class="input-group">
@@ -67,6 +69,7 @@
                   id="inputYear"
                 />
               </div>
+              <span id="dateerror"></span>
             </div>
             <div class="input-group">
               <label for="">CVC</label>
@@ -76,19 +79,20 @@
                 maxlength="3"
                 id="inputCvc"
               />
+              <span id="cvcerror"></span>
             </div>
           </div>
           <button class="btn">Confirm</button>
         </div>
-      </div>
 
-      <!-- Completed state start -->
-      <!-- <div>
-      <img src="" alt="" />
-      <h3>Thank you!</h3>
-      <p>We've added your card details</p>
-      <button>Continue</button>
-    </div> -->
+        <!-- Completed state start -->
+        <div class="complet-card">
+          <img src="./images/icon-complete.svg" alt="" />
+          <h3>Thank you!</h3>
+          <p>We've added your card details</p>
+          <button id="continubtn">Continue</button>
+        </div>
+      </div>
     </div>
     <div class="attribution">
       Challenge by
