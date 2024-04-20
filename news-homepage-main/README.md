@@ -15,7 +15,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [news-homepage-main1.netlify.app](news-homepage-main1.netlify.app)
+- Live Site URL: [news-homepage-main1.netlify.app](https://news-homepage-main1.netlify.app)
 
 ### Built with
 
