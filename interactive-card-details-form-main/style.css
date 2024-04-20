@@ -196,3 +196,51 @@ input:focus {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-card {
+    background-image: url("./images/bg-main-mobile.png");
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
+  }
+  .right-card > .form {
+    left: 2rem;
+    margin-top: 3rem;
+  }
+  .left-card > .front-side {
+    position: relative;
+    top: 10rem;
+    left: -3rem;
+    height: 13rem;
+    width: 75%;
+    z-index: 4;
+  }
+  .left-card > .front-side h2 {
+    font-size: 20px;
+  }
+  .left-card > .front-side .inline p,
+  span {
+    font-size: 16px;
+  }
+  .left-card > .back-side {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+    width: 80%;
+    height: 13rem;
+    z-index: 1;
+  }
+  .back-side p {
+    position: relative;
+    right: 20rem;
+    left: -10rem;
+  }
+
+  .form .input-group > input {
+    width: 80%;
+  }
+}
