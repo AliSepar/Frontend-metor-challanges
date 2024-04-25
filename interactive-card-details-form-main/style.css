@@ -197,7 +197,7 @@ input:focus {
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 412px) {
+@media (max-width: 768px) {
   .container {
     flex-direction: column;
   }
@@ -207,7 +207,7 @@ input:focus {
     width: 100vw;
     height: 30vh;
   }
-  .right-card  .form {
+  .right-card .form {
     left: 0rem;
     top: 7rem;
     margin-top: 5rem 0;
@@ -215,13 +215,87 @@ input:focus {
     padding-right: 1rem;
     font-size: 20px;
   }
-  .input-group label{
+  .input-group label {
     font-size: 0.9rem;
   }
-  .input-group #inputCvc{
+  .input-group #inputCvc {
     width: 60%;
   }
-  .form .btn{
+  .form .btn {
+    width: 95%;
+  }
+  .left-card > .front-side {
+    position: relative;
+    top: 8rem;
+    left: -5rem;
+    height: 14rem;
+    width: 60%;
+    z-index: 4;
+  }
+  .left-card > .front-side h2 {
+    font-size: 20px;
+  }
+  .left-card > .front-side .inline p,
+  span {
+    font-size: 18px;
+  }
+  .left-card > .back-side {
+    position: absolute;
+    top: 2rem;
+    left: 10rem;
+    width: 60%;
+    height: 13rem;
+    z-index: 1;
+  }
+  .back-side .cvc {
+    position: relative;
+    /* right: 1rem; */
+    left: 23rem;
+    top: 5.5rem;
+    color: white;
+    width: 3rem;
+  }
+
+  .form .input-group > input {
+    width: 80%;
+  }
+
+  .complet-card {
+    position: relative;
+    margin: 0;
+    top: 5rem;
+    width: 90%;
+  }
+  .complet-card button {
+    width: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-card {
+    background-image: url("./images/bg-main-mobile.png");
+    background-size: cover;
+    width: 100vw;
+    height: 30vh;
+  }
+  .right-card .form {
+    left: 0rem;
+    top: 7rem;
+    margin-top: 5rem 0;
+    width: 400px;
+    padding-right: 1rem;
+    font-size: 20px;
+  }
+  .input-group label {
+    font-size: 0.9rem;
+  }
+  .input-group #inputCvc {
+    width: 60%;
+  }
+  .form .btn {
     width: 95%;
   }
   .left-card > .front-side {
@@ -252,7 +326,7 @@ input:focus {
     /* right: 1rem; */
     left: 16rem;
     top: 6rem;
-    color:white;
+    color: white;
     width: 3rem;
   }
 
@@ -260,19 +334,17 @@ input:focus {
     width: 80%;
   }
 
-  .complet-card{
+  .complet-card {
     position: relative;
     margin: 0;
     top: 5rem;
     width: 90%;
   }
-  .complet-card button{
+  .complet-card button {
     width: 90%;
   }
 
-
-  
-  .attribution{
+  .attribution {
     position: relative;
     top: 10rem;
   }
