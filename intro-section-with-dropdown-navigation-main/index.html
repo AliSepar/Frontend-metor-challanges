@@ -22,8 +22,9 @@
     <div class="container">
       <header>
         <h1>snap</h1>
-
         <nav>
+          <img src="images/icon-menu.svg" class="menu-open" alt="" />
+          <img src="images/icon-close-menu.svg" class="menu-close" alt="" />
           <ul>
             <li id="dropdown1-btn">
               Features
@@ -76,7 +77,15 @@
         </div>
 
         <div class="right-card">
-          <img src="images/image-hero-desktop.png" alt="image hero" />
+          <picture>
+            <source
+              media="(max-width:700px)"
+              srcset="./images/image-hero-mobile.png"
+            />
+            <img src="images/image-hero-desktop.png" alt="" />
+          </picture>
+
+          <!-- <img src="images/image-hero-desktop.png" alt="image hero" /> -->
         </div>
       </section>
 
