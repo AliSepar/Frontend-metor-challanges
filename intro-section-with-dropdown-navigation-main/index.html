@@ -24,32 +24,32 @@
         <h1>snap</h1>
 
         <nav>
-          <li>
-            <button>
+          <ul>
+            <li id="dropdown1-btn">
               Features
               <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <ul class="dropdown">
-              <li>Todo List</li>
-              <li>Calender</li>
-              <li>Remainders</li>
-              <li>Planning</li>
-            </ul>
-          </li>
-          <li>
-            <button>
+              <ul class="dropdown" id="dropdown1">
+                <li><img src="images/icon-todo.svg" alt="" />Todo List</li>
+                <li><img src="images/icon-calendar.svg" alt="" />Calender</li>
+                <li>
+                  <img src="images/icon-reminders.svg" alt="" />Remainders
+                </li>
+                <li><img src="images/icon-planning.svg" alt="" />Planning</li>
+              </ul>
+            </li>
+            <li id="dropdown2-btn">
               Company
               <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <ul class="dropdown">
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
-            </ul>
-          </li>
-          <li>Careers</li>
-          <li>Features</li>
-          <li>About</li>
+              <ul class="dropdown" id="dropdown2">
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>Features</li>
+            <li>About</li>
+          </ul>
         </nav>
 
         <div>
@@ -59,8 +59,8 @@
       </header>
 
       <section>
-        <div>
-          <h1>Make remote work</h1>
+        <div class="left-card">
+          <h1>Make <br />remote work</h1>
           <p>
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
@@ -74,8 +74,9 @@
             <img src="images/client-maker.svg" alt="" />
           </div>
         </div>
-        <div>
-          <img src="" alt="" />
+
+        <div class="right-card">
+          <img src="images/image-hero-desktop.png" alt="image hero" />
         </div>
       </section>
 
@@ -83,8 +84,9 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Alisabah</a>.
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
