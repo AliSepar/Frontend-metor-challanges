@@ -8,7 +8,7 @@
 }
 .container {
   background-color: hsl(0, 0%, 96%);
-  width: 1300px;
+  max-width: 1300px;
   /* width: 100vw; */
   height: 100vh;
   margin: auto;
@@ -91,13 +91,14 @@ header div button:hover {
   display: none;
 }
 section {
-  margin-top: 7rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
 }
 
 .right-card img {
-  width: 500px;
+  width: 420px;
+  height: 520px;
   /* height: 500px; */
 }
 .left-card {
@@ -145,13 +146,13 @@ section {
 }
 
 .attribution {
-  position: fixed;
+  position: relative;
   bottom: 0;
-  left: 30%;
+  /* left: 30%; */
   text-align: center;
   font-size: 0.9rem;
   text-align: center;
-  padding: 1rem;
+  padding: 1rem 3rem;
 }
 .attribution a {
   text-align: center;
