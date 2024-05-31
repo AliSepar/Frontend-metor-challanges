@@ -14,7 +14,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [testtimonial-grid.netlify.app](testtimonial-grid.netlify.app)
+- Live Site URL: [testtimonial-grid.netlify.app](https://testtimonial-grid.netlify.app/)
 
 ## My process
 
